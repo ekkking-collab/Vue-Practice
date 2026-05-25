@@ -8,3 +8,7 @@ export const userRegisterResver = ({ username, password, repassword }) => {
 export const userLoginResver = ({ username, password }) => {
   return request.post('/api/login', { username, password })
 }
+// 获取信息
+export const userGetInfo = () => {
+  return request.get('/my/userinfo')
+}
